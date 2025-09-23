@@ -1,104 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FameAI — Smartest AI Agents Platform</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FameAI</title>
+  <style>
+    /* COLORS */
+    :root {
+      --primary-dark: #0B2545;
+      --accent-cyan: #00AEEF;
+      --light-bg: #F7FBFF;
+      --white: #FFFFFF;
+      --dark-text: #0F1724;
+      --highlight-yellow: #FFD700;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--light-bg);
+      color: var(--dark-text);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: var(--white);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    nav a {
+      margin-left: 30px;
+      font-weight: 500;
+      color: var(--primary-dark);
+    }
+
+    .cta-header {
+      background: var(--accent-cyan);
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 12px;
+      font-weight: 700;
+      box-shadow: 0 6px 18px rgba(0,174,239,0.18);
+      margin-left: 30px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px 80px 20px;
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-cyan) 100%);
+      color: var(--white);
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .hero .cta-button {
+      background: var(--highlight-yellow);
+      color: var(--primary-dark);
+      padding: 16px 36px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .trust-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .trust-section .stars {
+      font-size: 22px;
+      color: var(--highlight-yellow);
+    }
+
+    .trust-section p {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 80px 50px;
+    }
+
+    .section:nth-child(even) .text {
+      order: 2;
+    }
+
+    .section img {
+      flex: 1;
+      max-width: 500px;
+      width: 100%;
+      margin: 20px;
+    }
+
+    .section .text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .section .text h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .section .text p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .section .text .cta-button {
+      background: var(--accent-cyan);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      box-shadow: 0 6px 18px rgba(0,174,239,0.18);
+    }
+
+    .before-after {
+      display: flex;
+      justify-content: center;
+      margin: 80px 20px;
+    }
+
+    .before-after .box {
+      flex: 1;
+      margin: 10px;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .before {
+      background: #e0e0e0;
+    }
+
+    .after {
+      background: var(--accent-cyan);
+      color: #fff;
+    }
+
+    footer {
+      background: var(--primary-dark);
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header / Navigation -->
-  <header class="main-header">
-    <div class="logo">
-      <img src="logo.png" alt="FameAI Logo" />
-      <span>FameAI</span>
-    </div>
+
+  <header>
+    <div class="logo">FameAI</div>
     <nav>
       <a href="#pricing">Pricing</a>
-      <a href="#signin">Sign in</a>
-      <a href="#login">Log in</a>
-      <a class="cta-button" href="#agents">Find your agent</a>
+      <a href="#signin">Sign In</a>
+      <a href="#login">Log In</a>
+      <a href="#find" class="cta-header">Find Your Agent</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
     <h1>The Smartest AI Agents Platform to Manage, Automate & Grow Your Business Effortlessly.</h1>
     <p>Manage, automate and scale with ready-made AI agents for hotels, restaurants, clinics and more.</p>
-    <a class="cta-button" href="#agents">Find your agent</a>
-    <div class="trust-rating">
-      <span>★★★★★</span>
-      <p>Trusted by the world’s largest (2200+ agents) businesses</p>
+    <a href="#pick" class="cta-button">Pick Your Agent</a>
+  </section>
+
+  <section class="trust-section">
+    <div class="stars">★★★★★</div>
+    <p>Trusted by the world’s largest (2200+ agents) businesses</p>
+  </section>
+
+  <!-- SECTION 1 -->
+  <section class="section">
+    <img src="placeholder.png" alt="AI agent working">
+    <div class="text">
+      <h2>AI Agents Are the Best AI Service</h2>
+      <p>Our AI agents help automate bookings, customer support, and scale your business seamlessly.</p>
+      <a href="#demo" class="cta-button">Try it Now</a>
     </div>
   </section>
 
-  <!-- Pick your agent -->
-  <section class="pick-agent">
-    <h2>Pick your agent</h2>
-    <!-- Tu bude grid kategórií agentov -->
-    <div class="agent-grid">
-      <!-- Príklad jednej kategórie -->
-      <div class="agent-category">
-        <img src="hotel.png" alt="Hotel Agent" />
-        <h3>Hotel AI Agents</h3>
-        <p>Handles hotel bookings, check-ins and guest questions.</p>
-        <a class="cta-button" href="#demo">Try it out</a>
-        <a class="cta-button secondary" href="#contact">Buy now</a>
-      </div>
-      <!-- Duplikovať pre ďalšie kategórie -->
+  <!-- SECTION 2 -->
+  <section class="section">
+    <div class="text">
+      <h2>How Can AI Scale Your Business?</h2>
+      <p>Integrate our multilingual agents and watch your efficiency and revenue grow exponentially.</p>
+      <a href="#demo" class="cta-button">Learn More</a>
+    </div>
+    <img src="placeholder.png" alt="Business growth with AI">
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="section">
+    <img src="placeholder.png" alt="AI agent automation">
+    <div class="text">
+      <h2>Pick Your AI Agent</h2>
+      <p>Choose from hotels, restaurants, dental, barbershop, ecommerce and more. Available in multiple languages.</p>
+      <a href="#marketplace" class="cta-button">Browse Agents</a>
     </div>
   </section>
 
-  <!-- Feature / Info Section 1 -->
-  <section class="feature">
-    <div class="feature-text">
-      <h2>AI Agents are the best AI service</h2>
-      <p>Scale your business, save time, and improve customer experience.</p>
-      <a class="cta-button" href="#agents">Get started</a>
-    </div>
-    <div class="feature-image">
-      <!-- Obrazok sem neskôr -->
-      <img src="feature1.png" alt="AI agent illustration">
-    </div>
-  </section>
-
-  <!-- Feature / Info Section 2 (opacne) -->
-  <section class="feature reverse">
-    <div class="feature-image">
-      <img src="feature2.png" alt="AI scaling business">
-    </div>
-    <div class="feature-text">
-      <h2>How can AI scale your business?</h2>
-      <p>Automate tasks, handle customer calls, and increase revenue effortlessly.</p>
-      <a class="cta-button" href="#agents">Learn more</a>
-    </div>
-  </section>
-
-  <!-- Repeat similar sections 3-6 podľa toho ako FansMetric -->
-  <!-- CTA + tables (Before / After) -->
-  <section class="comparison">
-    <div class="table before">
+  <!-- BEFORE / AFTER -->
+  <section class="before-after">
+    <div class="box before">
       <h3>Before AI Agents</h3>
-      <ul>
-        <li>Manual bookings</li>
-        <li>Slow response</li>
-        <li>Limited language support</li>
-      </ul>
+      <p>Manual bookings, slow customer response, limited reach.</p>
     </div>
-    <div class="table after">
+    <div class="box after">
       <h3>After AI Agents</h3>
-      <ul>
-        <li>Automated bookings</li>
-        <li>24/7 instant response</li>
-        <li>Multilingual support</li>
-      </ul>
+      <p>Automated bookings, instant support, multilingual global reach.</p>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FINAL CTA -->
+  <section class="section">
+    <div class="text">
+      <h2>2500+ Businesses Helped Worldwide</h2>
+      <p>Join the thousands of companies scaling with FameAI.</p>
+      <a href="#find" class="cta-button">Get Started</a>
+    </div>
+    <img src="placeholder.png" alt="Global business network">
+  </section>
+
   <footer>
-    <p>2500+ businesses helped. All rights reserved © 2025 FameAI.</p>
-    <a class="cta-button" href="#agents">Start now</a>
+    &copy; 2025 FameAI — All Rights Reserved
   </footer>
+
 </body>
 </html>
