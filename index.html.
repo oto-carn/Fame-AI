@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FameAI — Smartest AI Agents Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="logo.png" alt="FameAI Logo" />
+      <span>FameAI</span>
+    </div>
+    <nav>
+      <a href="#pricing">Pricing</a>
+      <a href="#signin">Sign in</a>
+      <a href="#login">Log in</a>
+      <a class="cta-button" href="#agents">Find your agent</a>
+    </nav>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>The Smartest AI Agents Platform to Manage, Automate & Grow Your Business Effortlessly.</h1>
+    <p>Manage, automate and scale with ready-made AI agents for hotels, restaurants, clinics and more.</p>
+    <a class="cta-button" href="#agents">Find your agent</a>
+    <div class="trust-rating">
+      <span>★★★★★</span>
+      <p>Trusted by the world’s largest (2200+ agents) businesses</p>
+    </div>
+  </section>
+
+  <!-- Pick your agent -->
+  <section class="pick-agent">
+    <h2>Pick your agent</h2>
+    <!-- Tu bude grid kategórií agentov -->
+    <div class="agent-grid">
+      <!-- Príklad jednej kategórie -->
+      <div class="agent-category">
+        <img src="hotel.png" alt="Hotel Agent" />
+        <h3>Hotel AI Agents</h3>
+        <p>Handles hotel bookings, check-ins and guest questions.</p>
+        <a class="cta-button" href="#demo">Try it out</a>
+        <a class="cta-button secondary" href="#contact">Buy now</a>
+      </div>
+      <!-- Duplikovať pre ďalšie kategórie -->
+    </div>
+  </section>
+
+  <!-- Feature / Info Section 1 -->
+  <section class="feature">
+    <div class="feature-text">
+      <h2>AI Agents are the best AI service</h2>
+      <p>Scale your business, save time, and improve customer experience.</p>
+      <a class="cta-button" href="#agents">Get started</a>
+    </div>
+    <div class="feature-image">
+      <!-- Obrazok sem neskôr -->
+      <img src="feature1.png" alt="AI agent illustration">
+    </div>
+  </section>
+
+  <!-- Feature / Info Section 2 (opacne) -->
+  <section class="feature reverse">
+    <div class="feature-image">
+      <img src="feature2.png" alt="AI scaling business">
+    </div>
+    <div class="feature-text">
+      <h2>How can AI scale your business?</h2>
+      <p>Automate tasks, handle customer calls, and increase revenue effortlessly.</p>
+      <a class="cta-button" href="#agents">Learn more</a>
+    </div>
+  </section>
+
+  <!-- Repeat similar sections 3-6 podľa toho ako FansMetric -->
+  <!-- CTA + tables (Before / After) -->
+  <section class="comparison">
+    <div class="table before">
+      <h3>Before AI Agents</h3>
+      <ul>
+        <li>Manual bookings</li>
+        <li>Slow response</li>
+        <li>Limited language support</li>
+      </ul>
+    </div>
+    <div class="table after">
+      <h3>After AI Agents</h3>
+      <ul>
+        <li>Automated bookings</li>
+        <li>24/7 instant response</li>
+        <li>Multilingual support</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>2500+ businesses helped. All rights reserved © 2025 FameAI.</p>
+    <a class="cta-button" href="#agents">Start now</a>
+  </footer>
+</body>
+</html>
