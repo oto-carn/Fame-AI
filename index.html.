@@ -188,11 +188,19 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>The Smartest AI Agents Platform to Manage, Automate & Grow Your Business Effortlessly.</h1>
-    <p>Manage, automate and scale with ready-made AI agents for hotels, restaurants, clinics and more.</p>
-    <a href="#pick" class="cta-button">Pick Your Agent</a>
-  </section>
+  <section class="hero" style="background-color:#001f3f; color:white; text-align:center; padding:100px 20px;">
+  <h1 style="line-height:1.2; font-size:48px; max-width:900px; margin:0 auto;">
+    The Smartest AI Agents<br>
+    Platform to Manage, Automate &<br>
+    Grow Your Business Effortlessly
+  </h1>
+  <p style="font-size:20px; max-width:700px; margin:20px auto 40px auto;">
+    Manage, automate and scale with ready-made AI agents for hotels, restaurants, clinics, and more.
+  </p>
+  <a href="#pick" class="cta-button" style="background-color:#ffcc00; color:#001f3f; padding:15px 35px; font-size:18px; text-decoration:none; border-radius:8px;">
+    Pick Your Agent
+  </a>
+</section>
 
   <section class="trust-section">
     <div class="stars">★★★★★</div>
