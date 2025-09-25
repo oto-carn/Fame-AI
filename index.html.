@@ -214,7 +214,10 @@
   <section class="trust-section">
     <div class="stars">★★★★★</div>
     <p>Trusted by the world’s largest (2200+ agents) businesses</p>
-  </section>
+ <div class="hero-image-container">
+  <img src="path-to-your-image.jpg" alt="Main AI Agent Screenshot" class="hero-image">
+</div>
+</section>
 
   <!-- SECTION 1 -->
   <section class="section">
