@@ -82,3 +82,14 @@ nav .cta {
   color: #ffd700;
   font-size: 16px;
 }
+
+.hero-image-container {
+  text-align: center; /* centrovanie kontajnera */
+  margin: 40px 5cm;   /* 5 cm zľava a sprava, 40px hore a dole */
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 20px; /* zaoblené rohy */
+  display: block;
+}
