@@ -93,3 +93,26 @@ nav .cta {
   border-radius: 20px; /* zaoblené rohy */
   display: block;
 }
+
+/* Hero Image Section */
+.hero-image-container {
+  text-align: center;
+  margin: 0 5cm; /* 5cm od okrajov */
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 20px; /* zaoblené rohy */
+  max-width: 1200px; /* obmedzená šírka */
+  display: block;
+  margin: 0 auto; /* centrovanie */
+}
+
+/* Level-up Section */
+.level-up {
+  text-align: center;
+  color: #FFD700; /* žltý nadpis */
+  font-size: 48px;
+  font-weight: 700;
+  margin: 40px 5cm; /* 5cm od okrajov, medzera nad a pod */
+}
