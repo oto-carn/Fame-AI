@@ -188,16 +188,29 @@
     </nav>
   </header>
 
-
-  <section class="trust-section">
-    <div class="stars">★★★★★</div>
-    <p>Trusted by the world’s largest (2200+ agents) businesses</p>
- <div class="hero-image-container">
-  <img src="path-to-your-image.jpg" alt="Main AI Agent Screenshot" class="hero-image">
-</div>
-<section class="level-up">
-  <h2>Level up with the Most Powerful AI Agents</h2>
+ <section class="hero">
+  <div class="hero-content">
+    <h1>
+      The Smartest AI Agents<br>
+      Platform to Manage, Automate<br>
+      & Grow Your Business Effortlessly.
+    </h1>
+    <p class="hero-subtitle">
+      Manage, automate and scale with ready-made AI agents for hotels, restaurants, clinics and more.
+    </p>
+    <a href="#pick" class="cta-button">Try it Now</a>
+    <div class="trusted">
+      <div class="stars">
+        ★★★★★
+      </div>
+      <p>Trusted by the world’s largest (2200+ agents) businesses.</p>
+<section class="hero-image">
+  <img src="https://via.placeholder.com/1200x600" alt="FameAI Preview" />
 </section>
+    </div>
+  </div>
+</section>
+
 
   <!-- SECTION 1 -->
   <section class="section">
