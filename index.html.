@@ -1,271 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FameAI</title>
-  <style>
-    /* COLORS */
-    :root {
-      --primary-dark: #0B2545;
-      --accent-cyan: #00AEEF;
-      --light-bg: #F7FBFF;
-      --white: #FFFFFF;
-      --dark-text: #0F1724;
-      --highlight-yellow: #FFD700;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: var(--light-bg);
-      color: var(--dark-text);
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background: var(--white);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .logo {
-      font-size: 28px;
-      font-weight: 700;
-      color: var(--primary-dark);
-    }
-
-    nav a {
-      margin-left: 30px;
-      font-weight: 500;
-      color: var(--primary-dark);
-    }
-
-    .cta-header {
-      background: var(--accent-cyan);
-      color: #fff;
-      padding: 10px 25px;
-      border-radius: 12px;
-      font-weight: 700;
-      box-shadow: 0 6px 18px rgba(0,174,239,0.18);
-      margin-left: 30px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 120px 20px 80px 20px;
-      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-cyan) 100%);
-      color: var(--white);
-    }
-
-    .hero h1 {
-      font-size: 60px;
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 24px;
-      margin-bottom: 30px;
-    }
-
-    .hero .cta-button {
-      background: var(--highlight-yellow);
-      color: var(--primary-dark);
-      padding: 16px 36px;
-      border-radius: 12px;
-      font-weight: 700;
-      font-size: 18px;
-    }
-
-    .trust-section {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .trust-section .stars {
-      font-size: 22px;
-      color: var(--highlight-yellow);
-    }
-
-    .trust-section p {
-      margin-top: 10px;
-      font-weight: 500;
-    }
-
-    .section {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      padding: 80px 50px;
-    }
-
-    .section:nth-child(even) .text {
-      order: 2;
-    }
-
-    .section img {
-      flex: 1;
-      max-width: 500px;
-      width: 100%;
-      margin: 20px;
-    }
-
-    .section .text {
-      flex: 1;
-      padding: 20px;
-    }
-
-    .section .text h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .section .text p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .section .text .cta-button {
-      background: var(--accent-cyan);
-      color: #fff;
-      padding: 14px 28px;
-      border-radius: 12px;
-      font-weight: 700;
-      box-shadow: 0 6px 18px rgba(0,174,239,0.18);
-    }
-
-    .before-after {
-      display: flex;
-      justify-content: center;
-      margin: 80px 20px;
-    }
-
-    .before-after .box {
-      flex: 1;
-      margin: 10px;
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-    }
-
-    .before {
-      background: #e0e0e0;
-    }
-
-    .after {
-      background: var(--accent-cyan);
-      color: #fff;
-    }
-
-    footer {
-      background: var(--primary-dark);
-      color: #fff;
-      text-align: center;
-      padding: 50px 20px;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FameAI — Smartest AI Agents Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <div class="logo">FameAI</div>
-    <nav>
-      <a href="#pricing">Pricing</a>
-      <a href="#signin">Sign In</a>
-      <a href="#login">Log In</a>
-      <a href="#find" class="cta-header">Find Your Agent</a>
-    </nav>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-row header-inner">
+      <div class="brand">
+        <!-- logo placeholder -->
+        <img src="images/logo-placeholder.png" alt="FameAI logo" class="logo-img">
+        <div class="brand-text">FameAI</div>
+      </div>
+
+      <nav class="site-nav">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#signin">Sign in</a>
+        <a href="#login">Log in</a>
+        <a href="#find" class="cta-bubble">Find your agent</a>
+      </nav>
+    </div>
   </header>
 
- <section class="hero">
-  <div class="hero-content">
-    <h1>
-      The Smartest AI Agents<br>
-      Platform to Manage, Automate<br>
-      & Grow Your Business Effortlessly.
-    </h1>
-    <p class="hero-subtitle">
-      Manage, automate and scale with ready-made AI agents for hotels, restaurants, clinics and more.
-    </p>
-    <a href="#pick" class="cta-button">Try it Now</a>
-    <div class="trusted">
-      <div class="stars">
-        ★★★★★
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>
+        The Smartest AI Agents<br>
+        Platform to Manage, Automate &<br>
+        Grow Your Business Effortlessly.
+      </h1>
+
+      <p class="hero-subtitle">
+        Manage, automate and scale with ready-made AI agents for hotels, restaurants, clinics and more.
+      </p>
+
+      <a href="#marketplace" class="cta-primary">Try it Now</a>
+
+      <div class="trusted-row">
+        <div class="stars">★★★★★</div>
+        <div class="trusted-text">Trusted by the world’s largest (380+ agents) businesses.</div>
       </div>
-      <p>Trusted by the world’s largest (2200+ agents) businesses.</p>
-<section class="hero-image">
-  <img src="https://via.placeholder.com/1200x600" alt="FameAI Preview" />
-</section>
+
+      <!-- BIG HERO IMAGE (user will replace images/hero-main.jpg) -->
+      <div class="hero-image-container">
+        <img src="images/hero-main-placeholder.jpg" alt="FameAI platform preview">
+      </div>
+
+    </div> <!-- hero-inner -->
+  </section>
+
+  <!-- LEVEL UP HEADLINE -->
+  <section class="level-up">
+    <h2>Level Up with the Most Powerful AI Agents</h2>
+  </section>
+
+  <!-- FEATURE 1 (image left, text right) -->
+  <section class="feature">
+    <div class="feature-media">
+      <img src="images/feature-1.jpg" alt="Transform with AI">
     </div>
+
+    <div class="feature-text">
+      <h3>Transform Your Business with Unlimited AI Agents, AI Services & AI Marketplace Solutions</h3>
+      <p class="lead">Automate calls, bookings, and customer interactions effortlessly with our AI-powered platform.</p>
+      <ul>
+        <li>Instant deployment for any department or service</li>
+        <li>AI services for customer support, sales, and operations</li>
+        <li>Manage multiple locations securely from one dashboard</li>
+        <li>Features: Call logs, Performance Analytics, Custom Scripts, Voice AI, and more</li>
+      </ul>
+      <a href="#demo" class="feature-cta">Try it Now</a>
+    </div>
+  </section>
+
+  <!-- FEATURE 2 (image right, text left) -->
+  <section class="feature reverse">
+    <div class="feature-media">
+      <img src="images/feature-2.jpg" alt="Maximize results with AI">
+    </div>
+
+    <div class="feature-text">
+      <h3>Maximize Your Business Results with Smart AI Agents</h3>
+      <p class="lead">Stop losing customers to missed calls and slow responses. Our AI Agents platform automates customer interactions, bookings, and support so your business runs smoothly 24/7.</p>
+      <ul>
+        <li>Handle more customer calls and inquiries without hiring extra staff</li>
+        <li>AI services that respond instantly and efficiently, improving satisfaction</li>
+        <li>Keep your business organized with AI-powered dashboards and reporting</li>
+        <li>Features: Multi-agent management, Automated Scripts, Voice AI, Performance Tracking, and more</li>
+      </ul>
+      <a href="#demo" class="feature-cta">Try it Now</a>
+    </div>
+  </section>
+
+  <!-- FEATURE 3 (image left) -->
+  <section class="feature">
+    <div class="feature-media">
+      <img src="images/feature-3.jpg" alt="AI-powered insights">
+    </div>
+
+    <div class="feature-text">
+      <h3>Unlock AI-Powered Insights for Your Business</h3>
+      <p class="lead">See how your AI agents perform in real-time and find new opportunities to grow.</p>
+      <ul>
+        <li>Track AI agent performance and key metrics effortlessly</li>
+        <li>Identify areas to improve and maximize efficiency</li>
+        <li>Features: Dashboards, Automated Insights, Multi-agent analytics</li>
+      </ul>
+      <a href="#demo" class="feature-cta">Try it Now</a>
+    </div>
+  </section>
+
+  <!-- FEATURE 4 (image right) -->
+  <section class="feature reverse">
+    <div class="feature-media">
+      <img src="images/feature-4.jpg" alt="How it works">
+    </div>
+
+    <div class="feature-text">
+      <h3>How It Works: AI Agents Made Easy</h3>
+      <p class="lead">Our AI agents are created in 11Labs and run through a seamless n8n workflow. They work in multiple languages and follow the exact prompts you set, handling calls and bookings automatically.</p>
+      <ul>
+        <li>AI agents built with 11Labs for intelligent voice and logic</li>
+        <li>Fully automated with n8n workflow for smooth operation</li>
+        <li>Supports multiple languages to serve any customer</li>
+        <li>Works exactly according to your prompts, handling everything from calls to bookings</li>
+      </ul>
+      <a href="#demo" class="feature-cta">Try it Now</a>
+    </div>
+  </section>
+
+  <!-- FEATURE 5 (image left) -->
+  <section class="feature">
+    <div class="feature-media">
+      <img src="images/feature-5.jpg" alt="Plug & Play">
+    </div>
+
+    <div class="feature-text">
+      <h3>Plug & Play AI Agents – Fully Customizable</h3>
+      <p class="lead">Set up AI agents in minutes and let them adapt to your business needs. Handle calls, bookings, and customer interactions effortlessly.</p>
+      <ul>
+        <li>Instant setup, no technical skills needed</li>
+        <li>Fully adaptable for any business or workflow</li>
+        <li>Multi-language support for global reach</li>
+        <li>Custom Prompts, Tailored Scripts, Automated Workflows</li>
+      </ul>
+      <a href="#demo" class="feature-cta">Try it Now</a>
+    </div>
+  </section>
+
+  <!-- SUCCESS STORIES -->
+  <section class="success">
+    <h2>Success Stories: How FameAI Transforms Businesses</h2>
+    <p>Switching to FameAI completely changed how we run our business. Calls are never missed, bookings are automated, and customer interactions feel effortless. Our team can focus on growth while FameAI handles the routine tasks. It’s smart, reliable, and truly boosts efficiency—game-changing for any company wanting to scale fast.</p>
+  </section>
+
+  <!-- CTA -->
+  <section class="level-up">
+    <h2>Start growing your business now</h2>
+    <a href="#find" class="cta-primary" style="margin-top:18px; display:inline-block;">Try it Now</a>
+  </section>
+
+  <!-- BEFORE / AFTER COMPARISON -->
+  <section class="compare-wrap">
+    <div class="compare">
+      <div class="card before">
+        <h4>Before FameAI</h4>
+        <ul>
+          <li>Missed calls and lost bookings</li>
+          <li>No insight into performance</li>
+          <li>Wasted hours on repetitive tasks</li>
+          <li>Hard to track marketing</li>
+          <li>Chaotic operations</li>
+        </ul>
+      </div>
+
+      <div class="card after">
+        <h4>After FameAI</h4>
+        <ul>
+          <li>Automated calls & seamless bookings</li>
+          <li>Real-time AI agent & business analytics</li>
+          <li>Save time with AI-powered automation</li>
+          <li>Effortlessly monitor campaigns & ROI</li>
+          <li>Manage your entire workflow in one smart platform</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE HIGHLIGHT (pyramid style) -->
+  <div class="price-highlight">
+    Prices at ~80% less than other AI agents
   </div>
-</section>
 
-
-  <!-- SECTION 1 -->
-  <section class="section">
-    <img src="placeholder.png" alt="AI agent working">
-    <div class="text">
-      <h2>AI Agents Are the Best AI Service</h2>
-      <p>Our AI agents help automate bookings, customer support, and scale your business seamlessly.</p>
-      <a href="#demo" class="cta-button">Try it Now</a>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      © 2025 FameAI — All Rights Reserved
     </div>
-  </section>
-
-  <!-- SECTION 2 -->
-  <section class="section">
-    <div class="text">
-      <h2>How Can AI Scale Your Business?</h2>
-      <p>Integrate our multilingual agents and watch your efficiency and revenue grow exponentially.</p>
-      <a href="#demo" class="cta-button">Learn More</a>
-    </div>
-    <img src="placeholder.png" alt="Business growth with AI">
-  </section>
-
-  <!-- SECTION 3 -->
-  <section class="section">
-    <img src="placeholder.png" alt="AI agent automation">
-    <div class="text">
-      <h2>Pick Your AI Agent</h2>
-      <p>Choose from hotels, restaurants, dental, barbershop, ecommerce and more. Available in multiple languages.</p>
-      <a href="#marketplace" class="cta-button">Browse Agents</a>
-    </div>
-  </section>
-
-  <!-- BEFORE / AFTER -->
-  <section class="before-after">
-    <div class="box before">
-      <h3>Before AI Agents</h3>
-      <p>Manual bookings, slow customer response, limited reach.</p>
-    </div>
-    <div class="box after">
-      <h3>After AI Agents</h3>
-      <p>Automated bookings, instant support, multilingual global reach.</p>
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section class="section">
-    <div class="text">
-      <h2>2500+ Businesses Helped Worldwide</h2>
-      <p>Join the thousands of companies scaling with FameAI.</p>
-      <a href="#find" class="cta-button">Get Started</a>
-    </div>
-    <img src="placeholder.png" alt="Global business network">
-  </section>
-
-  <footer>
-    &copy; 2025 FameAI — All Rights Reserved
   </footer>
 
 </body>
